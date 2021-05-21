@@ -1,301 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-        <title>ManCoaching by Bernadett</title>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+    <title>Life Coach Bernadett Nagy</title>
 
-        <link rel="stylesheet" href="css/site.css?v10" />
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <meta name="robots" content="noindex" />
 
-        <link rel="icon" href="img/favicon.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="Life Coach Bernadett"/>
+    <meta property="fb:admins" content="janoszen" />
+    <meta property="fb:pages" content="190725044900185" />
+    <meta property="og:image" content="https://bernadett.coach/img/facebook.png?v4" />
+    <meta property="og:url" content="https://bernadett.coach/" />
+    <meta property="og:description" content="Are you ready to start working toward the life you dream of? There is so much more possible for you with the right guidance and support!" />
+    <meta property="og:type" content="website" />
 
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="" />
-        <meta property="og:title" content="ManCoaching by Bernadett"/>
-        <meta property="fb:admins" content="janoszen" />
-        <meta property="fb:pages" content="190725044900185" />
-        <meta property="og:image" content="https://bernadett.coach/img/facebook.png?v4" />
-        <meta property="og:url" content="https://bernadett.coach/" />
-        <meta property="og:description" content="Are you ready to start working toward the life you dream of? There is so much more possible for you with the right guidance and support!" />
-        <meta property="og:type" content="website" />
-    </head>
+    <style>
+        html, body{
+            height:100%;
+        }
 
-    <body>
-        <div class="container">
-            <div class="logo">
-                <a href="/">
-                    <img src="img/logo-white.svg" alt="ManCoaching by Bernadett" />
-                </a>
-            </div>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="#about-you">About you</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#coaching">Coaching</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#about-me">About me</a>
-                    </li>
-                </ul>
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="#testimonials">Testimonials</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="https://calendly.com/mancoaching/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mancoaching/30min'});return false;">Book a Session</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="video">
-                <iframe class="video__iframe" src="https://www.youtube-nocookie.com/embed/pIB3NgKQbX0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <section id="about-you">
-                <h1>About You</h1>
-                <h2>Do you recognize yourself?</h2>
-                <p>
-                    You are a <em>high achiever</em>, hungry for challenges and growth.
-                    <em>Authenticity</em> is one of your core values, therefore you are willing to look into the mirror to discover who you really are.
-                    You are a <em>changemaker</em>, who is not afraid of questioning the status quo.
-                    Being a <em>Citizen of the World</em>, you are open minded and curious about new ways of thinking.
-                </p>
-                <div class="cta">
-                    <a href="https://calendly.com/mancoaching/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mancoaching/30min'});return false;"><button>Improve yourself today &rarr;</button></a>
-                </div>
-            </section>
-            <section id="coaching">
-                <h1>Your Coaching Program</h1>
+        body {
+            margin:0;
+            padding:0;
+            background: url(img/background.svg) no-repeat center;
+            background-size: cover;
+            height:100%;
+        }
 
-                <p>I'm supporting You in unleashing your <strong>full potential</strong> and in creating a <strong>purposeful life</strong>.</p>
+        .container {
+            height:100%;
+            position:relative;
+            display: flex;
+            flex-direction:row;
+        }
 
-                <div class="aside-block aside-block-30">
-                    <aside><img src="img/detti.jpg" alt="" /></aside>
+        a {
+            position:relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex-basis: 50%;
+            color: inherit;
+            text-decoration:none;
+        }
 
-                    <p>This coaching program is made for you if you want:</p>
-                    <ul>
-                        <li>to have better, healthy relationships.</li>
-                        <li>to find your mission / life purpose.</li>
-                        <li>to feel more confident.</li>
-                        <li>to become an authentic leader.</li>
-                        <li>to create a healthy lifestyle and find your inner peace.</li>
-                        <li>to leave your boring job and create a meaningful business or new career opportunity.</li>
-                        <li>to simply make the best of your life.</li>
-                    </ul>
+        span {
+            display: block;
+            text-align: center;
+        }
 
-                    <p>Stop wasting time not living the life you want and schedule a <a href="https://calendly.com/mancoaching/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mancoaching/30min'});return false;">free 30 mins discovery call</a>.</p>
+        img {
+            height: 100px;
+        }
+        img.mirrorme {
+            height:250px;
+        }
 
-                    <h2>More in detail:</h2>
-
-                    <p>
-                        <em>If you are committed</em> to your personal growth and <em>to make the best of your
-                        life</em>, I invite you to join me for a <em>4 months</em> period of weekly or bi-weekly
-                        coaching sessions. We will use either Skype or Zoom for our <em>90mins online</em>
-                        discussion and exercise combo. My toolbox contains elements from my Co-active Coaching,
-                        Neuro-Linguistic Programming (NLP) and Cognitive Behavioral Therapy (CBT) trainings. Although inner
-                        work is something serious, I will show you how to make it fun.
-                    </p>
-
-                    <p>During the process you will get answers to the following questions among others:</p>
-
-                    <ul>
-                        <li><em>Where are you</em> in your life today?</li>
-                        <li>How to be a <em>better leader</em> / version of yourself?</li>
-                        <li>What is your <em>life purpose</em> / mission?</li>
-                        <li>What is <em>holding you back</em>?</li>
-                        <li>How to create a <em>healthy lifestyle</em> you enjoy?</li>
-                        <li>What can you do to have better <em>relationships</em> in your life?</li>
-                    </ul>
-                    <!--p>
-                        <strong>Where are you in your life today?</strong><br />
-                        Mapping out all areas of your life to check where you are now and where you wanna grow.
-                    </p>
-
-                    <p>
-                        <strong>How to be a better leader/ version of yourself?</strong><br />
-                        Re-connecting with yourself through defining your core values, strengths, fears and personality structure. Learn to live in integrity and to walk the talk.
-                    </p>
-
-                    <p>
-                        <strong>What is your life purpose / mission?</strong><br />
-                        Finding your purpose and what fulfillment means to you. Make a plan to leave your job safely or create a new position or even an own business.
-                    </p>
-
-                    <p>
-                        <strong>What is holding you back?</strong><br />
-                        Discovering your limiting beliefs and patterns which do not work anymore. Gain more self-confidence and create an action plan.
-                    </p>
-
-                    <p>
-                        <strong>How to create a healthy lifestyle you enjoy?</strong><br />
-                        Being conscious and creating new, healthy habits. Find out how to have a work-life balance.
-                    </p>
-
-                    <p>
-                        <strong>What can you do to have better relationships in your life?</strong><br />
-                        Learning to express yourself, to say no and to set boundaries or just knowing what you really want.
-                    </p-->
-                </div>
-
-                <div class="cta">
-                    <a href="https://calendly.com/mancoaching/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mancoaching/30min'});return false;"><button>Book a free discovery session &rarr;</button></a>
-                </div>
-            </section>
-            <section id="about-me">
-                <h1>About Me</h1>
-
-                <h2>Why coaching?</h2>
-
-                <p>
-                    I like seeing happy people around me and love to make them happy. After helping a few friends and
-                    family members with success, I decided to make my passion my work, which is
-                    <em>supporting people</em> in helping themselves, asking the right questions to realize how to
-                    live the life they love.
-                </p>
-                <p>
-                    In my experience coaching is a fun and efficient method, which I used personally to build a
-                    <em>conscious lifestyle</em>, to make my dreams come true and to find my inner peace.
-                </p>
-
-                <div class="gallery">
-                    <div class="gallery__image gallery__image--w285 gallery__image--1"><img src="img/aboutme_1.jpg" alt=""></div>
-                    <div class="gallery__image gallery__image--w285 gallery__image--2"><img src="img/aboutme_2.jpg" alt=""></div>
-                    <div class="gallery__image gallery__image--w380 gallery__image--3"><img src="img/aboutme_3.jpg" alt=""></div>
-                    <div class="gallery__image gallery__image--w285 gallery__image--4"><img src="img/aboutme_4.jpg" alt=""></div>
-                    <div class="gallery__image gallery__image--w570 gallery__image--5"><img src="img/aboutme_5.jpg" alt=""></div>
-                </div>
-
-                <h2>Why men?</h2>
-
-                <p>
-                    Often Men are portrayed as tough <em>superheroes</em>, who have to deal with everything without a
-                    flinch. Speaking about emotions, problems, or a path to happiness is seen as feminine and is not
-                    something that comes easily.
-                </p>
-                <p>
-                    All too often do I see men being <em>stressed, frustrated or simply miserable</em>, where the reason
-                    is buried so deep that even they don't know the true reason.
-                </p>
-
-                <p>
-                    I have spent 10 years of my life learning and <em>supporting my own father</em> to open up and find
-                    out what really matters to him. Coincidentally, this also saved his marriage, created meaningful
-                    relationships and resulted in a more fulfilling life.
-                </p>
-
-                <p>
-                    Having had first hand experiences with how <em>profound of a change</em> inner work can be, I now
-                    wish to share my learnings and tools with you.
-                </p>
-
-                <hr />
-
-                <p>
-                    Curious? Visit my <a href="https://www.facebook.com/mirrormebyBernadett">Facebook page</a>,
-                    <a href="https://www.instagram.com/mancoachingbybernadett/">Instagram</a> or
-                    <a href="https://www.youtube.com/channel/UCPb44Dtpmz8hJIfr7yS1ZwA">YouTube channel</a> for more and
-                    for some daily inspiration!
-                </p>
-                <div class="cta">
-                    <a href="https://calendly.com/mancoaching/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mancoaching/30min'});return false;"><button>Learn more &rarr;</button></a>
-                </div>
-            </section>
-            <section id="testimonials">
-                <h1>Testimonials</h1>
-
-                <div class="testimonial">
-                    <h2 class="testimonial__name">Mr. Elie C.</h2>
-                    <div class="testimonial__text">
-                        <p>For the last couple of years, I have been looking at living closer to my purpose in every area of my life. Somewhere half way, I met Bernadett and we started having periodic sessions, which helped me go for my most ambitious goals. Coaching sessions with Bernadett are fun and energising. It doesn’t feel like work, yet progress is significant and she knows how to support you to get a step further than your comfort zone. And this is where the magic begins.</p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <h2 class="testimonial__name">Henrik A.</h2>
-                    <div class="testimonial__text">
-                        <p>I met Bernadett in Bali. She is a very open and positive person, she easily talks about her own challenges, which made it easy for me to build trust. She has now coached me during 10 sessions and the results have been amazing. One thing I appreciate a lot about her, is that she is taking her own medicine. She continuously challenges herself as she does with me. Another thing i noticed: the more I let go of control of the content, the better it works. She managed to make coaching fun and very effectful. I can highly recommend her as a coach.</p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <h2 class="testimonial__name">Gabor Sz.</h2>
-                    <div class="testimonial__text">
-                        <p>Perhaps oddly, I started to consider turning to a coach when I felt I got the major areas of my life on the right track. But that was when I felt ready to seek external help to enter a newer dimension. I was hesitant whether coaching would be my thing, but I gave it a shot, and the discovery call with Bernadett exceeded my high expectations. Now I've been through 5 sessions and I can tell that I am transforming for the better week by week, and am able to see the steps on my path clearly further on. It is very exciting.</p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <h2 class="testimonial__name">János P.</h2>
-                    <div class="testimonial__text">
-                        <p>Bernadett has helped me through some serious decisions and a low point as well. Her ability to catch you when you are lying to yourself and confront you about it in a gentle, compassionate fashion, is incredibly helpful for helping you fulfill your dreams.</p>
-                    </div>
-                </div>
-                <div class="cta">
-                    <a href="https://calendly.com/mancoaching/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mancoaching/30min'});return false;"><button>Curious? Book here &rarr;</button></a>
-                </div>
-            </section>
-            <section id="book">
-                <div class="aside-block aside-block-30 aside-block-mt">
-                    <aside><img src="img/contact-image.jpg" alt="" class="round" /></aside>
-                    <h1>Let's Connect!</h1>
-
-                    <ul>
-                        <li><strong>Languages:</strong> English, Hungarian</li>
-                        <li><strong>E-mail:</strong> <a href="mailto:&#x6D;&#x65;&#x40;&#x62;&#x65;&#x72;&#x6E;&#x61;&#x64;&#x65;&#x74;&#x74;&#x2E;&#x63;&#x6F;&#x61;&#x63;&#x68;">&#x6D;&#x65;&#x40;&#x62;&#x65;&#x72;&#x6E;&#x61;&#x64;&#x65;&#x74;&#x74;&#x2E;&#x63;&#x6F;&#x61;&#x63;&#x68;</a></li>
-                        <li><strong>Facebook:</strong> <a href="https://facebook.com/mirrormebyBernadett">@mirrormebyBernadett</a></li>
-                        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/mancoachingbybernadett/">@mancoachingbybernadett</a></li>
-                        <li><strong>YouTube:</strong> <a href="https://www.youtube.com/channel/UCPb44Dtpmz8hJIfr7yS1ZwA">ManCoaching by Bernadett Nagy</a></li>
-                    </ul>
-                    <div class="cta">
-                        <a href="https://calendly.com/mancoaching/30min" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mancoaching/30min'});return false;"><button>Book Now &rarr;</button></a>
-                    </div>
-                </div>
-            </section>
-            <footer>
-                <span class="copyright">Copyright &copy; 2018-2020 Bernadett Nagy</span>
-            </footer>
-        </div>
-        <script>
-            window.addEventListener('load', function () {
-                //region LQIP
-                var images = document.getElementsByTagName("img");
-                var imagesToLoad = 0;
-                for (var i = 0; i < images.length; i++) {
-                    if (images.hasOwnProperty(i)) {
-                        var image = images[i];
-                        if (
-                            typeof image.dataset !== "undefined" &&
-                            typeof image.dataset.srcset !== "undefined" &&
-                            typeof image.dataset.sizes !== "undefined" &&
-                            typeof image.dataset.src !== "undefined"
-                        ) {
-                            imagesToLoad++;
-                            image.addEventListener("load", function () {
-                               imagesToLoad--;
-                               if (imagesToLoad === 0) {
-                                   initSlider();
-                               }
-                            });
-                            image.setAttribute("srcset", image.dataset.srcset);
-                            image.setAttribute("sizes", image.dataset.sizes);
-                            image.setAttribute("src", image.dataset.src);
-                        }
-                    }
-                }
-                //endregion
-
-                //region Hamburger menu
-                var menuItems = document.getElementsByClassName("menu__dismiss");
-                var checkbox = document.getElementById("hamburger");
-                for (var i = 0; i < menuItems.length; i++) {
-                    if (menuItems.hasOwnProperty(i)) {
-                        menuItems[i].addEventListener("click", function () {
-                            checkbox.checked = false;
-                        });
-                    }
-                }
-                //endregion
-            });
-        </script>
-    </body>
+        @media screen and (max-width:512px) {
+            img {
+                height: 50px;
+            }
+            img.mirrorme {
+                height:125px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="mancoaching/"><span><img src="img/mancoaching.svg" alt="ManCoaching by Bernadett" /></span></a>
+        <a href="mirrorme/"><span><img src="img/mirrorme.svg" alt="MirrorMe by Bernadett" class="mirrorme" /></span></a>
+    </div>
+</body>
 </html>

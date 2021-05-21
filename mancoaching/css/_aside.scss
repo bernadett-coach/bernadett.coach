@@ -1,0 +1,32 @@
+@import "variables";
+.aside-block aside img {
+  width: 100%;
+}
+@media screen and (min-width:$width) {
+  .aside-block {
+    overflow: auto;
+
+    aside {
+      float: right;
+      width: 39%;
+      margin-left: 2%;
+      position: relative;
+    }
+  }
+}
+
+@media screen and (min-width:$width) {
+  .aside-block-30 {
+    aside {
+      width: 29%;
+    }
+  }
+}
+
+@media screen and (min-width:$width) {
+  .aside-block-mt {
+    aside {
+      margin-top:24px;
+    }
+  }
+}

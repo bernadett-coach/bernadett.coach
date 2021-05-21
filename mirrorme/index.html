@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+        <title>Mirror Me by Bernadett</title>
+
+        <link rel="stylesheet" href="css/frontpage.css" />
+
+        <link rel="icon" href="img/favicon.png" />
+
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Mirror Me by Bernadett" />
+        <meta property="og:title" content=""/>
+        <meta property="fb:admins" content="janoszen" />
+        <meta property="fb:pages" content="190725044900185" />
+        <meta property="og:image" content="https://bernadett.coach/img/facebook.jpg" />
+        <meta property="og:url" content="https://bernadett.coach/" />
+        <meta property="og:description" content="Are you ready to start working toward the life you dream of? There is so much more possible for you with the right guidance and support!" />
+        <meta property="og:type" content="website" />
+    </head>
+
+    <body>
+        <nav class="menu">
+            <h1 class="menu__logo">
+                <a href="#">
+                    <img src="img/logo.svg" alt="Mirror Me by Bernadett" />
+                </a>
+            </h1>
+            <label class="menu__toggle" for="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <input type="checkbox" class="menu__checkbox" id="hamburger" />
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#about-you" class="menu__dismiss">About you</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#life-coaching" class="menu__dismiss">Coaching</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#about-me" class="menu__dismiss">About me</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#testimonials" class="menu__dismiss">Testimonials</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#contact" class="menu__dismiss">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="slider" id="header">
+            <div class="slider__page slider__page--active" data-slider-page="1">
+                <img class="slider__image" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/4QKARXhpZgAATU0AKgAAAAgACQEPAAIAAAAGAAAAegEQAAIAAAAKAAAAgAESAAMAAAABAAEAAAEaAAUAAAABAAAAigEbAAUAAAABAAAAkgEoAAMAAAABAAIAAAExAAIAAAAMAAAAmgEyAAIAAAAUAAAApodpAAQAAAABAAAAugAAAABBcHBsZQBpUGhvbmUgU0UAAAAASAAAAAEAAABIAAAAAUdJTVAgMi44LjE2ADIwMTg6MDg6MTcgMjA6MjY6NTkAAByCmgAFAAAAAQAAAhCCnQAFAAAAAQAAAhiIIgADAAAAAQACAACIJwADAAAAAQAZAACQAAAHAAAABDAyMjGQAwACAAAAFAAAAiCQBAACAAAAFAAAAjSRAQAHAAAABAECAwCSAQAKAAAAAQAAAkiSAgAFAAAAAQAAAlCSAwAKAAAAAQAAAliSBAAKAAAAAQAAAmCSBwADAAAAAQAFAACSCQADAAAAAQAQAACSCgAFAAAAAQAAAmiSFAADAAAABAAAAnCSkQACAAAABDc1OQCSkgACAAAABDc1OQCgAAAHAAAABDAxMDCgAQADAAAAAQABAACgAgAEAAAAAQAAAUCgAwAEAAAAAQAAAGyiFwADAAAAAQACAACjAQAHAAAAAQEAAACkAgADAAAAAQAAAACkAwADAAAAAQAAAACkBQADAAAAAQAdAACkBgADAAAAAQAAAAAAAAAAAAAAAQAAB4MAAAALAAAABTIwMTg6MDY6MDIgMTY6MTE6MjAAMjAxODowNjowMiAxNjoxMToyMAAAACMzAAADOgAAHtQAAA2NAABdgQAACG8AAAAAAAAAAQAAAFMAAAAUDAQHmAECAQT/4Q1maHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49J++7vycgaWQ9J1c1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCc/Pgo8eDp4bXBtZXRhIHhtbG5zOng9J2Fkb2JlOm5zOm1ldGEvJz4KPHJkZjpSREYgeG1sbnM6cmRmPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjJz4KCiA8cmRmOkRlc2NyaXB0aW9uIHhtbG5zOmF1eD0naHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC9hdXgvJz4KICA8YXV4OkxlbnNJbmZvPjgzLzIwIDgzLzIwIDExLzUgMTEvNTwvYXV4OkxlbnNJbmZvPgogIDxhdXg6TGVucz5pUGhvbmUgU0UgYmFjayBjYW1lcmEgNC4xNW1tIGYvMi4yPC9hdXg6TGVucz4KIDwvcmRmOkRlc2NyaXB0aW9uPgoKIDxyZGY6RGVzY3JpcHRpb24geG1sbnM6eG1wPSdodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvJz4KICA8eG1wOkNyZWF0ZURhdGU+MjAxOC0wNi0wMlQxNjoxMToyMDwveG1wOkNyZWF0ZURhdGU+CiAgPHhtcDpNb2RpZnlEYXRlPjIwMTgtMDYtMDJUMTY6MTE6MjA8L3htcDpNb2RpZnlEYXRlPgogIDx4bXA6Q3JlYXRvclRvb2w+UGhvdG9zaG9wIEV4cHJlc3MgNi43LjAuMTI5NzwveG1wOkNyZWF0b3JUb29sPgogPC9yZGY6RGVzY3JpcHRpb24+CgogPHJkZjpEZXNjcmlwdGlvbiB4bWxuczpwaG90b3Nob3A9J2h0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8nPgogIDxwaG90b3Nob3A6RGF0ZUNyZWF0ZWQ+MjAxOC0wNi0wMlQxNjoxMToyMDwvcGhvdG9zaG9wOkRhdGVDcmVhdGVkPgogPC9yZGY6RGVzY3JpcHRpb24+CgogPHJkZjpEZXNjcmlwdGlvbiB4bWxuczptd2ctcnM9J2h0dHA6Ly93d3cubWV0YWRhdGF3b3JraW5nZ3JvdXAuY29tL3NjaGVtYXMvcmVnaW9ucy8nPgogPC9yZGY6RGVzY3JpcHRpb24+CgogPHJkZjpEZXNjcmlwdGlvbiB4bWxuczpzdEFyZWE9J2h0dHA6Ly9ucy5hZG9iZS5jb20veG1wL3NUeXBlL0FyZWEjJz4KIDwvcmRmOkRlc2NyaXB0aW9uPgoKIDxyZGY6RGVzY3JpcHRpb24geG1sbnM6YXBwbGUtZmk9J2h0dHA6Ly9ucy5hcHBsZS5jb20vZmFjZWluZm8vMS4wLyc+CiA8L3JkZjpEZXNjcmlwdGlvbj4KCiA8cmRmOkRlc2NyaXB0aW9uIHhtbG5zOmV4aWY9J2h0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvJz4KICA8ZXhpZjpNYWtlPkFwcGxlPC9leGlmOk1ha2U+CiAgPGV4aWY6TW9kZWw+aVBob25lIFNFPC9leGlmOk1vZGVsPgogIDxleGlmOk9yaWVudGF0aW9uPlRvcC1sZWZ0PC9leGlmOk9yaWVudGF0aW9uPgogIDxleGlmOlhSZXNvbHV0aW9uPjcyPC9leGlmOlhSZXNvbHV0aW9uPgogIDxleGlmOllSZXNvbHV0aW9uPjcyPC9leGlmOllSZXNvbHV0aW9uPgogIDxleGlmOlJlc29sdXRpb25Vbml0PkluY2g8L2V4aWY6UmVzb2x1dGlvblVuaXQ+CiAgPGV4aWY6U29mdHdhcmU+UGhvdG9zaG9wIEV4cHJlc3MgNi43LjAuMTI5NzwvZXhpZjpTb2Z0d2FyZT4KICA8ZXhpZjpEYXRlVGltZT4yMDE4OjA2OjAyIDE2OjExOjIwPC9leGlmOkRhdGVUaW1lPgogIDxleGlmOkV4cG9zdXJlVGltZT4xLzE5MjMgc2VjLjwvZXhpZjpFeHBvc3VyZVRpbWU+CiAgPGV4aWY6Rk51bWJlcj5mLzIuMjwvZXhpZjpGTnVtYmVyPgogIDxleGlmOkV4cG9zdXJlUHJvZ3JhbT5Ob3JtYWwgcHJvZ3JhbTwvZXhpZjpFeHBvc3VyZVByb2dyYW0+CiAgPGV4aWY6SVNPU3BlZWRSYXRpbmdzPgogICA8cmRmOlNlcT4KICAgIDxyZGY6bGk+MjU8L3JkZjpsaT4KICAgPC9yZGY6U2VxPgogIDwvZXhpZjpJU09TcGVlZFJhdGluZ3M+CiAgPGV4aWY6RXhpZlZlcnNpb24+RXhpZiBWZXJzaW9uIDIuMjE8L2V4aWY6RXhpZlZlcnNpb24+CiAgPGV4aWY6RGF0ZVRpbWVPcmlnaW5hbD4yMDE4OjA2OjAyIDE2OjExOjIwPC9leGlmOkRhdGVUaW1lT3JpZ2luYWw+CiAgPGV4aWY6RGF0ZVRpbWVEaWdpdGl6ZWQ+MjAxODowNjowMiAxNjoxMToyMDwvZXhpZjpEYXRlVGltZURpZ2l0aXplZD4KICA8ZXhpZjpDb21wb25lbnRzQ29uZmlndXJhdGlvbj4KICAgPHJkZjpTZXE+CiAgICA8cmRmOmxpPlkgQ2IgQ3IgLTwvcmRmOmxpPgogICA8L3JkZjpTZXE+CiAgPC9leGlmOkNvbXBvbmVudHNDb25maWd1cmF0aW9uPgogIDxleGlmOlNodXR0ZXJTcGVlZFZhbHVlPjEwLjkxIEVWICgxLzE5MjMgc2VjLik8L2V4aWY6U2h1dHRlclNwZWVkVmFsdWU+CiAgPGV4aWY6QXBlcnR1cmVWYWx1ZT4yLjI4IEVWIChmLzIuMik8L2V4aWY6QXBlcnR1cmVWYWx1ZT4KICA8ZXhpZjpCcmlnaHRuZXNzVmFsdWU+MTEuMDkgRVYgKDc0NTMuNTUgY2QvbV4yKTwvZXhpZjpCcmlnaHRuZXNzVmFsdWU+CiAgPGV4aWY6RXhwb3N1cmVCaWFzVmFsdWU+MC4wMCBFVjwvZXhpZjpFeHBvc3VyZUJpYXNWYWx1ZT4KICA8ZXhpZjpNZXRlcmluZ01vZGU+UGF0dGVybjwvZXhpZjpNZXRlcmluZ01vZGU+CiAgPGV4aWY6Rmxhc2ggcmRmOnBhcnNlVHlwZT0nUmVzb3VyY2UnPgogIDwvZXhpZjpGbGFzaD4KICA8ZXhpZjpGb2NhbExlbmd0aD40LjIgbW08L2V4aWY6Rm9jYWxMZW5ndGg+CiAgPGV4aWY6U3ViamVjdEFyZWE+CiAgIDxyZGY6U2VxPgogICAgPHJkZjpsaT5XaXRoaW4gcmVjdGFuZ2xlICh3aWR0aCAyNTgsIGhlaWdodCAyNjApIGFyb3VuZCAoeCx5KSA9ICgzMDc2LDE5NDQpPC9yZGY6bGk+CiAgIDwvcmRmOlNlcT4KICA8L2V4aWY6U3ViamVjdEFyZWE+CiAgPGV4aWY6U3ViU2VjVGltZU9yaWdpbmFsPjc1OTwvZXhpZjpTdWJTZWNUaW1lT3JpZ2luYWw+CiAgPGV4aWY6U3ViU2VjVGltZURpZ2l0aXplZD43NTk8L2V4aWY6U3ViU2VjVGltZURpZ2l0aXplZD4KICA8ZXhpZjpGbGFzaFBpeFZlcnNpb24+Rmxhc2hQaXggVmVyc2lvbiAxLjA8L2V4aWY6Rmxhc2hQaXhWZXJzaW9uPgogIDxleGlmOkNvbG9yU3BhY2U+c1JHQjwvZXhpZjpDb2xvclNwYWNlPgogIDxleGlmOlBpeGVsWERpbWVuc2lvbj40MDMyPC9leGlmOlBp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" alt="" />
+                <img class="slider__image--highres"
+                    data-srcset="
+                        img/frontpage-slider-page1-320.jpg 320w,
+                        img/frontpage-slider-page1-768.jpg 768w,
+                        img/frontpage-slider-page1-1024.jpg 1024w,
+                        img/frontpage-slider-page1-1280.jpg 1280w,
+                        img/frontpage-slider-page1-2048.jpg 2048w,
+                        img/frontpage-slider-page1-4000.jpg 4000w
+                    " data-sizes="
+                        (max-width:320px) 320px,
+                        (max-width:768px) 768px,
+                        (max-width:1024px) 1024px,
+                        (max-width:2048px) 2048px,
+                        4000px
+                    " data-src="img/frontpage-slider-page1-lowres.jpg" alt="" />
+                <div class="slider__text">
+                    Feel the fear, do it anyway...
+                </div>
+                <div class="slider__signature">
+                    <a class="slider__cta" href="#contact">Book your life coaching<br />session now!</a>
+                </div>
+            </div>
+            <div class="slider__page" data-slider-page="2">
+                <img class="slider__image--highres"
+                     data-srcset="
+                        img/frontpage-slider-page2-320.jpg 320w,
+                        img/frontpage-slider-page2-768.jpg 768w,
+                        img/frontpage-slider-page2-1024.jpg 1024w,
+                        img/frontpage-slider-page2-1280.jpg 1280w,
+                        img/frontpage-slider-page2-2048.jpg 2048w,
+                        img/frontpage-slider-page2-4000.jpg 4000w
+                    " data-sizes="
+                        (max-width:320px) 320px,
+                        (max-width:768px) 768px,
+                        (max-width:1024px) 1024px,
+                        (max-width:2048px) 2048px,
+                        4000px
+                    " data-src="img/frontpage-slider-page2-320.jpg" alt="" />
+                <div class="slider__text">
+                    You are not what happened to you, you are what you wanna become.
+                </div>
+                <div class="slider__signature">
+                    <a class="slider__cta" href="#contact">Book your life coaching<br />session now!</a>
+                </div>
+            </div>
+            <div class="slider__page" data-slider-page="3">
+                <img class="slider__image--highres"
+                     data-srcset="
+                        img/frontpage-slider-page3-320.jpg 320w,
+                        img/frontpage-slider-page3-768.jpg 768w,
+                        img/frontpage-slider-page3-1024.jpg 1024w,
+                        img/frontpage-slider-page3-1280.jpg 1280w,
+                        img/frontpage-slider-page3-2048.jpg 2048w,
+                        img/frontpage-slider-page3-4000.jpg 4000w
+                    " data-sizes="
+                        (max-width:320px) 320px,
+                        (max-width:768px) 768px,
+                        (max-width:1024px) 1024px,
+                        (max-width:2048px) 2048px,
+                        4000px
+                    " data-src="img/frontpage-slider-page3-320.jpg" alt="" />
+                <div class="slider__text">
+                    I hope to be your favorite place to go<br />
+                    when you've had a bad day or a good day.
+                </div>
+                <div class="slider__signature">
+                    <a class="slider__cta" href="#contact">Book your life coaching<br />session now!</a>
+                </div>
+            </div>
+        </div>
+        <div id="about-you"></div>
+        <h2 class="headline"><span>About You</span></h2>
+        <div class="container">
+            <div class="text">
+                <h3>What if you recognise yourself?</h3>
+                <ul>
+                    <li>You are a <strong>high achiever</strong>, hungry for challenges and growth.</li>
+                    <li><strong>Authenticity</strong> is one of your core values, therefore you are willing to look into the mirror to discover who you really are.</li>
+                    <li>You are a <strong>changemaker</strong>, who is not afraid of questioning the status quo.</li>
+                    <li>Being a <strong>citizen of the World</strong>, you are open minded and curious about new ways of thinking.</li>
+                </ul>
+            </div>
+            <div class="cta">
+                <div class="cta__itemcontainer">
+                    <div class="cta__item">
+                        <span class="cta__text">
+                            Unfulfilled at work?
+                        </span>
+                        <img src="img/53957330_square_600.jpg" alt="" class="cta__image" />
+                    </div>
+                    <div class="cta__item">
+                        <span class="cta__text">
+                            Need someone to kick your ass?
+                        </span>
+                        <img src="img/102878754_square_600.jpg" alt="" class="cta__image" />
+                    </div>
+                    <div class="cta__item">
+                        <span class="cta__text">
+                            You &ldquo;should&rdquo; be happy?
+                        </span>
+                        <img src="img/103922112_square_600.jpg" alt="" class="cta__image" />
+                    </div>
+                    <div class="cta__item">
+                        <span class="cta__text">
+                            Craving change, but missing the courage?
+                        </span>
+                        <img src="img/38469519_square_600.jpg" alt="" class="cta__image" />
+                    </div>
+                    <div class="cta__item">
+                        <span class="cta__text">
+                            Looking for a purpose?
+                        </span>
+                        <img src="img/39419813_square_600.jpg" alt="" class="cta__image" />
+                    </div>
+                </div>
+            </div>
+            <ul class="list">
+                <li class="list__item">Are you ready to start working toward the life you dream of?</li>
+                <li class="list__item">There is so much more possible for you with the right guidance and support!</li>
+                <li class="list__item">Contact me for a free online <strong>discovery session</strong> and let this beautiful journey begin!</li>
+            </ul>
+        </div>
+        <div id="life-coaching"></div>
+        <h2 class="headline"><span>Life Coaching</span></h2>
+        <div class="container container--limited">
+            <div class="text">
+                <p class="text__spacebefore">No matter where you are, my coaching is available to you. I coach online via phone and video calls.</p>
+
+                <h3>On our beautiful coaching journey I will:</h3>
+
+                <div class="illustrated">
+                    <img src="./img/detti.jpg" alt="" class="illustrated__image" />
+                    <div class="illustrated__content">
+                        <ol>
+                            <li>become a <strong>trusted friend</strong> who will challenge you to <strong>perform at your best</strong>.</li>
+                            <li>help you to find the <strong>motivation</strong> essential to <strong>taking action</strong> and accomplishing your <strong>goals</strong>.</li>
+                            <li>give you the <strong>confidence to change</strong> jobs, move to a new city or get out of a toxic relationship and support you during the process.</li>
+                            <li>help you process your <strong>old beliefs</strong> to get more done and find your <strong>inner peace</strong>.</li>
+                            <li>support you in finding ways to earn more by <strong>identifying your strengths</strong> that you can leverage.</li>
+                            <li>help you name your <strong>fears</strong> and do everything you want to do.</li>
+                            <li>challenge you to <strong>learn, grow, have fun and take action</strong> in exciting new ways.</li>
+                            <li>help you find <strong>clarity</strong> by knowing your <strong>values</strong> and your patterns better.</li>
+                            <li>make your <strong>decision</strong> making process easier.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <p>I am offering a discovery session online for free to enable you to experience coaching and to see if we are a good match.</p>
+
+                <hr />
+
+                <h3>Reinvent yourself program</h3>
+
+                <p>When you're ready commit to a longer journey...</p>
+
+                <ul>
+                    <li>4 months</li>
+                    <li>8 or 16 sessions</li>
+                    <li>biweekly exercise</li>
+                    <li>biweekly actual topic coaching</li>
+                </ul>
+
+                <p>During the process you will get answers to the following questions among others:</p>
+
+                <ol>
+                    <li><strong>Who are you today?</strong><br /> Knowing yourself better through defining your values, strengths, fears, “crew members”. - min. 3 sessions</li>
+                    <li><strong>What is holding you back?</strong><br /> Discovering your limiting beliefs and patterns which do not work anymore. - min. 2 sessions</li>
+                    <li><strong>What do you really want?</strong><br /> Finding your purpose and what fulfillment means to you. Believe that you can have it all! - min. 2 sessions</li>
+                    <li><strong>How does it feel to be the truly amazing you?</strong><br /> Increase your energy and decrease your stress level. Connect with your inner child and through self-love learn to accept yourself and dare to be who you truly are. - min. 4 sessions</li>
+                    <li><strong>Action plan:</strong><br /> creating new habits, grow like never before. - min. 3 sessions</li>
+                </ol>
+
+                <div class="video">
+                    <iframe class="video__iframe" src="https://www.youtube-nocookie.com/embed/pIB3NgKQbX0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div id="about-me"></div>
+        <h2 class="headline"><span>About Me</span></h2>
+        <div class="container container--limited">
+            <div class="text">
+                <h3>Who am I when no one is watching?</h3>
+
+                <ul>
+                    <li>I was a rebel already in my mom’s belly.</li>
+                    <li>By the age of 7 my heart healed itself and decided to spread love wherever it goes.</li>
+                    <li>I am enjoying life with all my senses.</li>
+                    <li>Living the lifestyle of my dreams, where nature, freedom and joy are key components.</li>
+                    <li>I am addicted to self-development and to empower people.</li>
+                    <li>I believe deep inside we just want to be loved.</li>
+                    <li>I am a life changes expert: built a “new” life in 5 countries, 7 times.</li>
+                    <li>I am always hungry for laughter.</li>
+                    <li>I am a believer in the beauty of intimacy.</li>
+                    <li>The airport is my “second home”.</li>
+                    <li>I am a smiling, but radically honest mirror.</li>
+                    <li>I am an audio book fan.</li>
+                    <li>I still believe in magic.</li>
+                    <li>I believe happiness is an inside job.</li>
+                    <li>Yoga, meditation and work-life balance are very important to me.</li>
+                </ul>
+
+                <div class="gallery">
+                    <div class="gallery__image gallery__image--w285 gallery__image--1"><img src="img/aboutme_1.jpg" alt="" /></div>
+                    <div class="gallery__image gallery__image--w285 gallery__image--2"><img src="img/aboutme_2.jpg" alt="" /></div>
+                    <div class="gallery__image gallery__image--w380 gallery__image--3"><img src="img/aboutme_3.jpg" alt="" /></div>
+                    <div class="gallery__image gallery__image--w285 gallery__image--4"><img src="img/aboutme_4.jpg" alt="" /></div>
+                    <div class="gallery__image gallery__image--w570 gallery__image--5"><img src="img/aboutme_5.jpg" alt="" /></div>
+                </div>
+
+                <p class="text--center">Curious? Visit my <a href="https://www.facebook.com/mirrormebyBernadett" target="_blank">Facebook page</a>, <a href="https://www.instagram.com/mancoachingbybernadett/" target="_blank">Instagram</a> or <a href="https://www.youtube.com/channel/UCPb44Dtpmz8hJIfr7yS1ZwA" target="_blank">YouTube channel</a> for more and for some daily inspiration!</p>
+
+            </div>
+        </div>
+        <div id="testimonials"></div>
+        <h2 class="headline"><span>Testimonials</span></h2>
+        <div class="container container--limited testimonials text">
+            <div class="testimonial">
+                <h3 class="testimonial__name">Mr. Elie C.</h3>
+                <div class="testimonial__text">
+                    For the last couple of years, I have been looking at living closer to my purpose in every area of my life. Somewhere half way, I met Bernadett and we started having periodic sessions, which helped me go for my most ambitious goals. Coaching sessions with Bernadett are fun and energising. It doesn’t feel like work, yet progress is significant and she knows how to support you to get a step further than your comfort zone. And this is where the magic begins.
+                </div>
+            </div>
+            <div class="testimonial">
+                <h3 class="testimonial__name">Henrik A.</h3>
+                <div class="testimonial__text">
+                    I met Bernadett in Bali. She is a very open and positive person, she easily talks about her own challenges, which made it easy for me to build trust. She has now coached me during 10 sessions and the results have been amazing.<br />
+                    One thing I appreciate a lot about her, is that she is taking her own medicine. She continuously challenges herself as she does with me. Another thing i noticed: the more I let go of control of the content, the better it works. She managed to make coaching fun and very effectful.<br />
+                    I can highly recommend her as a coach.
+                </div>
+            </div>
+            <div class="testimonial">
+                <h3 class="testimonial__name">Gabor Sz.</h3>
+                <div class="testimonial__text">
+                    Perhaps oddly, I started to consider turning to a coach when I felt I got the major areas of my life on the right track. But that was when I felt ready to seek external help to enter a newer dimension. I was hesitant whether coaching would be my thing, but I gave it a shot, and the discovery call with Bernadett exceeded my high expectations. Now I've been through 5 sessions and I can tell that I am transforming for the better week by week, and am able to see the steps on my path clearly further on. It is very exciting.
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <h3 class="testimonial__name">János P.</h3>
+                <div class="testimonial__text">
+                    Bernadett has helped me through some serious decisions and a low point as well. Her ability to catch you when you are lying to yourself and confront you about it in a gentle, compassionate fashion, is incredibly helpful for helping you fulfill your dreams.
+                </div>
+            </div>
+            <div class="testimonial">
+                <h3 class="testimonial__name">Périne S.</h3>
+                <div class="testimonial__text">
+                    I know Bernadett as a very intuitive, gentle, smart, insightful co-active coach. Her sparkling, positive energy is very inspiring and her ability to get straight to what matters makes her very effective in her coaching. She has the ability to create awareness just with her presence.
+                </div>
+            </div>
+            <div class="testimonial">
+                <h3 class="testimonial__name">Jessica B.</h3>
+                <div class="testimonial__text">
+                    Do you want to be coached with understanding and care? Bernadett as a life coach is authentic, likable, practical and professional. She laughs, makes you feel at ease, shares her opinions and had asked me questions that helped me realize what needs to happen in my life for me to see that I have progressed towards my goal of greater self acceptance. She offered introductary coaching and I wouldn´t hestitate to recommend her to those wanting a supportive guide on their first experience to self development.
+                </div>
+            </div>
+            <div class="testimonial">
+                <h3 class="testimonial__name">Anna M.</h3>
+                <div class="testimonial__text">
+                    Bernadett has a truly charming coaching style and if she looks directly into your soul, Bernadett gets quick understanding of the challengies your are coming through and helps you discover the future. She stands by your side and helps you own your dreams. She listens to your concerns and picks up quickly on your self-beliefs which limit your potential. With Bernadett you discover new ways, new options and courage to pursue what you were long aiming for.
+                </div>
+            </div>
+        </div>
+        <div id="contact"></div>
+        <h2 class="headline"><span>Contact</span></h2>
+        <div class="contact">
+            <div class="contact__details text">
+                <h3>Bernadett Nagy</h3>
+                <p>
+                    If you’re ready to take your life to the next level, it’s time to get started!<br />
+                    If you would like to learn more about life coaching, let's chat!
+                </p>
+                <table>
+                    <tr>
+                        <th>Languages:</th>
+                        <td>English, Hungarian</td>
+                    </tr>
+                    <tr>
+                        <th>E-mail:</th>
+                        <td><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#105;&#114;&#114;&#111;&#114;&#109;&#101;&#64;&#98;&#101;&#114;&#110;&#97;&#100;&#101;&#116;&#116;&#46;&#99;&#111;&#97;&#99;&#104;">&#109;&#105;&#114;&#114;&#111;&#114;&#109;&#101;&#64;&#98;&#101;&#114;&#110;&#97;&#100;&#101;&#116;&#116;&#46;&#99;&#111;&#97;&#99;&#104;</a></td>
+                    </tr>
+                    <tr>
+                        <th>Facebook:</th>
+                        <td><a href="https://www.facebook.com/mirrormebyBernadett">@mirrormebyBernadett</a></td>
+                    </tr>
+                    <tr>
+                        <th>Instagram:</th>
+                        <td><a href="https://www.instagram.com/mancoachingbybernadett/">@mancoachingbybernadett</a></td>
+                    </tr>
+                    <tr>
+                        <th>YouTube:</th>
+                        <td><a href="https://www.youtube.com/channel/UCPb44Dtpmz8hJIfr7yS1ZwA">ManCoaching by Bernadett Nagy</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="contact__image">
+                <img src="img/contact-image.jpg" alt="" />
+            </div>
+        </div>
+        <script>
+            window.addEventListener('load', function () {
+                //region Slider
+                var advanceSlider = function() {
+                    var currentSlider = document.getElementsByClassName("slider__page--active")[0];
+                    var sliderNumber = parseInt(currentSlider.dataset['sliderPage']);
+                    var nextSlider = document.querySelectorAll("[data-slider-page=\"" + (sliderNumber + 1) + "\"]")[0];
+                    if (typeof nextSlider === "undefined") {
+                        nextSlider = document.querySelectorAll("[data-slider-page=\"1\"]")[0];
+                    }
+                    nextSlider.classList.add("slider__page--active");
+                    currentSlider.classList.remove("slider__page--active");
+                    setTimeout(advanceSlider, 8000);
+                };
+
+                var initSlider = function() {
+                    setTimeout(advanceSlider, 8000);
+                };
+                //endregion
+
+                //region LQIP
+                var images = document.getElementsByTagName("img");
+                var imagesToLoad = 0;
+                for (var i = 0; i < images.length; i++) {
+                    if (images.hasOwnProperty(i)) {
+                        var image = images[i];
+                        if (
+                            typeof image.dataset !== "undefined" &&
+                            typeof image.dataset.srcset !== "undefined" &&
+                            typeof image.dataset.sizes !== "undefined" &&
+                            typeof image.dataset.src !== "undefined"
+                        ) {
+                            imagesToLoad++;
+                            image.addEventListener("load", function () {
+                               imagesToLoad--;
+                               if (imagesToLoad === 0) {
+                                   initSlider();
+                               }
+                            });
+                            image.setAttribute("srcset", image.dataset.srcset);
+                            image.setAttribute("sizes", image.dataset.sizes);
+                            image.setAttribute("src", image.dataset.src);
+                        }
+                    }
+                }
+                //endregion
+
+                //region Hamburger menu
+                var menuItems = document.getElementsByClassName("menu__dismiss");
+                var checkbox = document.getElementById("hamburger");
+                for (var i = 0; i < menuItems.length; i++) {
+                    if (menuItems.hasOwnProperty(i)) {
+                        menuItems[i].addEventListener("click", function () {
+                            checkbox.checked = false;
+                        });
+                    }
+                }
+                //endregion
+            });
+        </script>
+    </body>
+</html>
