@@ -1,0 +1,9 @@
+@import "variables";
+.container {
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  @media screen and (min-width: $width) {
+    width:$width;
+  }
+}

@@ -1,0 +1,10 @@
+@import "variables";
+.cta {
+  margin-bottom:$line-height-base;
+  text-align:center;
+  button {
+    height:$line-height-base*2 - 4px;
+    padding-left:$line-height-base;
+    padding-right:$line-height-base;
+  }
+}

@@ -1,0 +1,45 @@
+@import "variables";
+
+.menu {
+  text-align:center;
+  margin-bottom:$line-height-base;
+  padding-left:20px;
+  padding-right:20px;
+  &__list {
+    padding:0;
+    @media screen and (min-width: $width) {
+      display:inline;
+      &::after {
+        content: " | ";
+        margin-left:0.5em;
+        margin-right:0.5em;
+        @media screen and (min-width: $width) {
+          margin-left:1em;
+          margin-right:1em;
+        }
+      }
+      &:last-child::after {
+        margin-left:0;
+        margin-right:0;
+        content: ""
+      }
+    }
+  }
+  &__item {
+    display:inline;
+    &::after {
+      content: " | ";
+      margin-left:0.5em;
+      margin-right:0.5em;
+      @media screen and (min-width: $width) {
+        margin-left:1em;
+        margin-right:1em;
+      }
+    }
+    &:last-child::after {
+      margin-left:0;
+      margin-right:0;
+      content: ""
+    }
+  }
+}
